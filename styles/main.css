@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.winner {
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.main-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-user {
+    padding: 0 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.field {
+    position: relative;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field label {
+    width: 100px;
+}
+
+.field .error {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.field input {
+    height: 20px;
+    width: 300px;
+}
+
+.field input.error-input {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.users-table table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+tr, td, th {
+    border: 1px solid black;
+    width: 25%;
+}
+

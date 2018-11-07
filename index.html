@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main class="content">
+        <header class="winner">
+            <span>Winners: <span id="winners"></span> </span>
+            <button onclick="getWinner()">New winner</button>
+        </header>
+
+        <section class="block2">
+            <form class="main-form">
+                <p>Registration form</p>
+                <div class="field">
+                    <label for="name-input">Name:</label>
+                    <input type="text" id="name-input" name="name" class="validate-js">
+                    <span class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="surname-input">Surname:</label>
+                    <input type="text"  id="surname-input" name="surname" class="validate-js">
+                    <span class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="email-input">Email:</label>
+                    <input type="text"  id="email-input" name="email" class="validate-js">
+                    <span class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="phone-input">Phone:</label>
+                    <input type="text"  id="phone-input" name="phone">
+                </div>
+
+                <div class="field">
+                    <label for="dateInput">Date of birth:</label>
+                    <input type="date"  id="dateInput" name="date">
+                </div>
+            </form>
+            <button id="add-user">Save</button>
+        </section>
+
+        <section class="users-table">
+            <table cellpadding="5">
+                <thead>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    </main>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
