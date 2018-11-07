@@ -18,7 +18,11 @@ body {
     align-items: center;
 }
 
-.block2 {
+.winner button {
+    height: 95%;
+}
+
+.fields {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -37,6 +41,8 @@ body {
     padding: 0 10px;
     cursor: pointer;
     border: 1px solid #000;
+    width: 80px;
+    height: 30px;
 }
 
 .field {
